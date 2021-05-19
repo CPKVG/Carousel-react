@@ -1,7 +1,6 @@
 import {useState,useEffect} from 'react' 
 
 
-
 const useCarousel = (slides,scrollSpeed = 4000) => {
     const [current, setCurrent] = useState(0) //returns a tuple(first sequence of list)
     const [auto, setAuto] = useState(true); //set carouel default as true
