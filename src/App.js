@@ -1,20 +1,17 @@
 import React from 'react'
-import Header from './Components/Header'
+// import Header from './Components/Header'
 
 
-import {ImageData} from './Components/Carousel/ImageData'
-import Carousel from './Components/Carousel/Carousel'
-import CarouselwHooks from './Components/Carousel/CarouselwHook'
+import {ImageData} from './ImageData/ImageData'
+import Carousel from './Components/Carousel'
+import MainLayout from './layouts/MainLayout'
 
 export const App = () => {
   return (
     <div> 
-      <Carousel slides = {ImageData}/>
-      
-      {<CarouselwHooks slides = {ImageData}/>}
-      <Header/>
-
-
+        <MainLayout>
+        <Carousel slides = {ImageData}/> {/*option to add carousel nested in mainlayout*/}
+        </MainLayout>
     </div>
   )
 }

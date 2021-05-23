@@ -1,9 +1,12 @@
-.slider-arrow{
+
+.sliderDirection{
+    margin:20px 10px 10px 10px;
     position:relative;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none; 
 }
 
 .image{
@@ -12,9 +15,11 @@
     border-radius:10px;
 }
 
-.right-arrow{
+.rightSelect{
     position:absolute;
-    top:50%;
+    height:auto;
+    width:10%;
+    /* top:50%; */
     right:32px;
     font-size: 3rem;
     color: #000;
@@ -23,9 +28,11 @@
     user-select:none;
 }
 
-.left-arrow{
+.leftSelect{
     position:absolute;
-    top:50%;
+    height:auto;
+    width:10%;
+    /* top:50%; */
     left:32px;
     font-size: 3rem;
     color: #000;
@@ -34,7 +41,13 @@
     user-select:none;
 }
 
-.pause-arrow{
+/* .leftArrow:hover{
+    background-color: #d3d3d3fd;
+    border:solid 0.3rem #161616ee;
+} */
+
+
+.pauseArrow{
     position:absolute;
     top:100%;
     left:45%;
@@ -45,7 +58,7 @@
     user-select:none;
 }
 
-.resume-arrow{
+.resumeArrow{
     position:absolute;
     top:100%;
     left:55%;

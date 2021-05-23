@@ -10,7 +10,7 @@ export const Header = ({title}) => {
 }
 
 Header.defaultProps = {
-    title:'Weather Tracker',
+    title:'Carousel template',
 }
 
 Header.propTypes = {
